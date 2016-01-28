@@ -2,17 +2,21 @@ body {
   font-size: 10px;
   font-family: "Poiret One", monospace, sans-serif;
 }
-
+h1 {
+  text-align: center;
+}
 .pokeWrapper {
   text-align: center;
+  float: left;
+  width: 33%;
 
   .imgWrapper {
-    animation: wiggler 2s infinite;
+    animation: wiggler .7s infinite;
   }
 }
 
 @keyframes wiggler {
-  0% {transform: rotate(4deg);}
-  50% {transform: rotate(-4deg);}
-  100% {transform: rotate(4deg);}
+  0% {transform: rotate(5deg); width: 100%;}
+  50% {transform: rotate(-5deg); width: 90%;}
+  100% {transform: rotate(5deg); width: 100%}
 }

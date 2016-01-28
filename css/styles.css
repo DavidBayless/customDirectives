@@ -2,17 +2,25 @@ body {
   font-size: 10px;
   font-family: "Poiret One", monospace, sans-serif; }
 
-.pokeWrapper {
+h1 {
   text-align: center; }
+
+.pokeWrapper {
+  text-align: center;
+  float: left;
+  width: 33%; }
   .pokeWrapper .imgWrapper {
-    animation: wiggler 2s infinite; }
+    animation: wiggler .7s infinite; }
 
 @keyframes wiggler {
   0% {
-    transform: rotate(4deg); }
+    transform: rotate(5deg);
+    width: 100%; }
   50% {
-    transform: rotate(-4deg); }
+    transform: rotate(-5deg);
+    width: 90%; }
   100% {
-    transform: rotate(4deg); } }
+    transform: rotate(5deg);
+    width: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */
